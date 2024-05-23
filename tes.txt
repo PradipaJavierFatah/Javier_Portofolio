@@ -1,0 +1,28 @@
+1. Baseline Proyek dan Cara Ngontrolnya
+Baseline yang Didefine:
+
+Scope Baseline: Apa aja yang bakal dikerjain di proyek ini.
+Schedule Baseline: Jadwal kerjaan dan deadline-nya.
+Cost Baseline: Anggaran duit buat proyek.
+Quality Baseline: Standar kualitas hasil kerjaan.
+Performance Baseline: Metode buat ngecek kinerja proyek.
+Cara Ngontrolnya:
+
+Monitoring dan Reporting Rutin: Rapat status dan laporan progress secara berkala.
+Proses Kontrol Perubahan: Aturan buat nangani perubahan baseline.
+Review Kinerja: Bandingin hasil nyata sama baseline.
+Manajemen Risiko: Identifikasi, nilai, dan atasi risiko.
+Dokumentasi: Catat semua aktivitas proyek dan perubahan.
+2. Beda SCM Software Konvensional sama WebApps
+
+SCM Software Konvensional:
+Siklus Rilis: Biasanya lama, ada versi mayor dan minor.
+Distribusi: Di-install di mesin atau server masing-masing.
+Update: Patch dan update periodik, sering butuh user buat intervensi.
+Lingkungan: Biasanya stabil dengan konfigurasi yang terkontrol.
+
+SCM WebApps:
+Siklus Rilis: Cepet, sering pake continuous integration dan deployment.
+Distribusi: Di-deploy di web server, bisa diakses lewat browser.
+Update: Update sering dan otomatis, nggak perlu user intervensi.
+Lingkungan: Dinamis, sering ada perubahan dan butuh rollback cepat.
