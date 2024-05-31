@@ -822,6 +822,10 @@ video {
   white-space: nowrap;
 }
 
+.text-pretty {
+  text-wrap: pretty;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
