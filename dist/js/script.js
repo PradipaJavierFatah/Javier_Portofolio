@@ -58,7 +58,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 }
 
 
-// Toggle Skill and Tools
+//  --- Toggle Skill and Tools Start ---
 const skillsContainer = document.getElementById('skillsContainer');
 const toolsContainer = document.getElementById('toolsContainer');
 const skillsBtn = document.getElementById('skillsBtn');
@@ -77,3 +77,26 @@ toolsBtn.addEventListener('click', function() {
     toolsContainer.classList.remove('hidden');
     skillsContainer.classList.add('hidden');
 });
+
+// For Change color button after click
+skillsBtn.addEventListener('click', () => {
+  // Change Skills button to orange
+  skillsBtn.classList.remove('bg-gray-300', 'dark:bg-gray-700');
+  skillsBtn.classList.add('bg-orange-500', 'text-white', 'hover:bg-orange-600');
+
+  // Change Tools button to gray
+  toolsBtn.classList.remove('bg-orange-500', 'hover:bg-orange-600');
+  toolsBtn.classList.add('bg-gray-300', 'dark:bg-gray-700', 'hover:bg-gray-400', 'dark:hover:bg-gray-600');
+});
+
+toolsBtn.addEventListener('click', () => {
+  // Change Tools button to orange
+  toolsBtn.classList.remove('bg-gray-300', 'dark:bg-gray-700');
+  toolsBtn.classList.add('bg-orange-500', 'text-white', 'hover:bg-orange-600');
+
+  // Change Skills button to gray
+  skillsBtn.classList.remove('bg-orange-500', 'hover:bg-orange-600');
+  skillsBtn.classList.add('bg-gray-300', 'dark:bg-gray-700', 'hover:bg-gray-400', 'dark:hover:bg-gray-600');
+});
+
+//  --- Toggle Skill and Tools End ---
