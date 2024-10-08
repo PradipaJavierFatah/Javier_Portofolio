@@ -57,3 +57,23 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   darkToggle.checked = false;
 }
 
+
+// Toggle Skill and Tools
+const skillsContainer = document.getElementById('skillsContainer');
+const toolsContainer = document.getElementById('toolsContainer');
+const skillsBtn = document.getElementById('skillsBtn');
+const toolsBtn = document.getElementById('toolsBtn');
+
+// Show skills and hide tools when "Skills" button is clicked
+skillsBtn.addEventListener('click', function() {
+    if (toolsContainer.classList.contains('hidden')) return; // Do nothing if skills are already shown
+    skillsContainer.classList.remove('hidden');
+    toolsContainer.classList.add('hidden');
+});
+
+// Show tools and hide skills when "Tools" button is clicked
+toolsBtn.addEventListener('click', function() {
+    if (skillsContainer.classList.contains('hidden')) return; // Do nothing if tools are already shown
+    toolsContainer.classList.remove('hidden');
+    skillsContainer.classList.add('hidden');
+});
