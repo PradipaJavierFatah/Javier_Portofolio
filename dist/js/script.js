@@ -100,3 +100,21 @@ toolsBtn.addEventListener('click', () => {
 });
 
 //  --- Toggle Skill and Tools End ---
+
+
+// Type Write Start
+document.addEventListener("DOMContentLoaded", function () {
+  var app = document.getElementById('typewriter');
+
+  var typewriter = new Typewriter(app, {
+      loop: true, // Biar looping terus
+      delay: 75, // Kecepatan ketikan
+  });
+
+  typewriter
+      .typeString('Student & Data Analyst')
+      .pauseFor(2000) // Nunggu 2 detik sebelum ulang
+      .deleteAll() // Hapus teks
+      .start(); // Mulai lagi
+});
+// Type Write End
