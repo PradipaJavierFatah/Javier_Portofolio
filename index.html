@@ -9,7 +9,7 @@
     <link href="src/output.css" rel="stylesheet" />
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia(
-                '(prefers-color-scheme: dark)').matches)) {
+            '(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
@@ -116,7 +116,7 @@
                     </p>
 
                     <div class="flex space-x-2">
-                        <a href="https://drive.google.com/file/d/1nhOjBdQyzb3L70SFJa3iaT-JZwn51hTz/view?usp=sharing"
+                        <a href="https://drive.google.com/file/d/1-0JRogQxajlwGyO6CkWyLJM5TAiwIcMR/view?usp=sharing"
                             target="_blank"
                             class="transistion cursor-pointer rounded-lg bg-primary px-8 py-3 text-base font-bold text-white duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">CV</a>
 
@@ -222,8 +222,7 @@
                             <!-- Figma -->
                             <div
                                 class="group relative flex flex-col justify-center items-center bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
-                                <img src="https://img.icons8.com/color/48/figma.png" alt="Figma"
-                                    class="w-12 h-12">
+                                <img src="https://img.icons8.com/color/48/figma.png" alt="Figma" class="w-12 h-12">
                                 <div
                                     class="absolute left-0 right-0 text-center mt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                     <span class="bg-gray-900 text-white text-sm px-2 py-1 rounded">Figma</span>
@@ -234,8 +233,7 @@
                             <!-- Python -->
                             <div
                                 class="group relative flex flex-col justify-center items-center bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
-                                <img src="https://img.icons8.com/color/48/python.png" alt="Python"
-                                    class="w-12 h-12">
+                                <img src="https://img.icons8.com/color/48/python.png" alt="Python" class="w-12 h-12">
                                 <div
                                     class="absolute left-0 right-0 text-center mt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                     <span class="bg-gray-900 text-white text-sm px-2 py-1 rounded">Python</span>
@@ -362,8 +360,7 @@
                             <!-- Adobe -->
                             <div
                                 class="group relative flex flex-col justify-center items-center bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
-                                <img src="dist/public/img/skill/adobe.svg" alt="Adobe Premiere Pro"
-                                    class="w-12 h-12">
+                                <img src="dist/public/img/skill/adobe.svg" alt="Adobe Premiere Pro" class="w-12 h-12">
                                 <div
                                     class="absolute left-0 right-0 text-center mt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                     <span class="bg-gray-900 text-white text-sm px-2 py-1 rounded">Adobe PR</span>
@@ -383,8 +380,7 @@
                             <!-- Google Suite -->
                             <div
                                 class="group relative flex flex-col justify-center items-center bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-300">
-                                <img src="dist/public/img/skill/suite.svg" alt="Adobe Google Suite"
-                                    class="w-12 h-12">
+                                <img src="dist/public/img/skill/suite.svg" alt="Adobe Google Suite" class="w-12 h-12">
                                 <div
                                     class="absolute left-0 right-0 text-center mt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                     <span class="bg-gray-900 text-white text-sm px-2 py-1 rounded">Google Suite</span>
@@ -770,8 +766,8 @@
                             <div id="alert-1"
                                 class="my-alert mb-4 mt-4 flex hidden items-center rounded-lg bg-green-50 p-4 text-green-800 dark:bg-gray-800 dark:text-green-400"
                                 role="alert">
-                                <svg class="h-4 w-4 flex-shrink-0" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="h-4 w-4 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
                                 </svg>
@@ -833,8 +829,7 @@
                             <a href="#about" class="mb-3 inline-block text-base hover:text-primary">About</a>
                         </li>
                         <li>
-                            <a href="#portofolio"
-                                class="mb-3 inline-block text-base hover:text-primary">Portofolio</a>
+                            <a href="#portofolio" class="mb-3 inline-block text-base hover:text-primary">Portofolio</a>
                         </li>
                         <li>
                             <a href="#experiences"
@@ -936,9 +931,9 @@
                 btnLoading.style.display = "flex";
 
                 fetch(scriptURL, {
-                        method: "POST",
-                        body: new FormData(form)
-                    })
+                    method: "POST",
+                    body: new FormData(form)
+                })
                     .then((response) => {
                         // Reset form
                         form.reset();
